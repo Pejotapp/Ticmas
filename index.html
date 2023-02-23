@@ -1,66 +1,308 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="css/sty_inicio.css">
-    <title>Inicio</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="estilo.css" />
+  <title>Inicio</title>
 </head>
 
-
 <body>
-    <div class="tarjeta">
-        <div class="usuario">
-            <div class="imgPerfil">
-                <img src="https://randomuser.me/api/portraits/men/33.jpg">
-            </div>
 
-            <div class="contenido">
-                <h2>NOMBRE COMPLETO AQUI <br>
-                <span>Diseño HTML, Full Stack Junior</span></h2>
-            </div>
+  <section class="inicio" id="inicio">
+    <div class="contenido-seccion">
+      <header>
 
-            <span class="toggle"></span>
+        <div class="nav-bar" onClick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-ellipsis"></i>
         </div>
 
-        <ul class="contacto">
-            <li style="--clr:#c71610;--i:0;">
-                <a href="#">
-                    <div class="icono"><i class="fa-solid fa-envelope"></i></div>
-                    <p>mailmail@correo.com</p>
-                </a>
-            </li>
+        <nav class="nav" id="nav">
 
-            <li style="--clr:#171515;--i:1;">
-                <a href="#">
-                    <div class="icono"><i class="fa-brands fa-github"></i></div>
-                    <p>mailmail@correo.com</p>
-                </a>
-            </li>
+          <a href="#inicio" class="nav__link"><i class="fa-solid fa-house-user"></i>HOME</a>
 
-            <li style="--clr:#0a66c2;--i:2;">
-                <a href="#">
-                    <div class="icono"><i class="fa-brands fa-linkedin"></i></div>
-                    <p>mailmail@correo.com</p>
-                </a>
-            </li>
-        </ul>
+          <a href="#contacto" class="nav__link"><i class="fa-solid fa-address-book"></i>CONTACTO</a>
+
+
+          <a href="#skills" class="nav__link"><i class="fa-solid fa-bolt"></i>SKILLS</a>
+
+
+
+          <a href="#exp" class="nav__link"><i class="fa-solid fa-briefcase"></i>EXPERIENCIA</a>
+
+
+
+        </nav>
+
+        <div class="logo">
+          P<span class="color">P</span>
+        </div>
+
+        <div class="info">
+          <h1>
+            PE PAGUAGA
+          </h1>
+          <h2>CODIFICADOR, DISEÑO HTML, EDITOR DE VIDEOS E IMÁGENES</h2>
+
+          <div class="redes">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+          </div>
+
+
+          <div class="fotoperfil">
+            <img src="2/fotoperfil.jpg" alt="">
+          </div>
+
+
+
+
+      </header>
     </div>
+  </section>
 
-<script>
-    let toggle = document.querySelector('.toggle');
-    let tarjeta = document.querySelector('.tarjeta');
-    toggle.onclick = function(){
-        tarjeta.classList.toggle('active');
-    }
-</script>
+  <section class="sobremi" id="contacto">
+
+    <div class="contenido-seccion">
+      <h2 class="titulo-seccion">Sobre Mi</h2>
 
 
+      <h3><i class="fa-solid fa-circle-info"></i><br>
+        Detalles Personales</h3>
+
+      <p class="especial">Me especializo en diseño, me gusta encontrar maneras creativas de hacer las cosas!</p>
+      <p>Como Geminiano que soy me ha gustado aprender varias cosas a lo largo de mi vida. Empecé estudiando por mi
+        cuenta sobre Adobe Photoshop, editando trabajos en internet y jugando con la edición. A su vez hoy en día edito
+        videos para creadores de contenidos. Comencé con el desarrollo HTML para expandir mis conocimientos en la
+        edición y poder continuar explorando nuevas maneras de ser creativo!</p>
+      <div class="fila">
+        <div class="col">
+          <i class="fa-solid fa-circle-user"></i>
+          <span class="titulo-detalle">Perfil</span>
+          <p>Mi nombre es Pedro Paguaga,<br> 10 de Junio de 1997. </p>
+        </div>
+
+        <div class="col">
+          <i class="fa-solid fa-envelope"></i>
+          <span class="titulo-detalle">Correo Electrónico</span>
+          <p>CorreoCorreo@servidor.com</p>
+        </div>
+
+        <div class="col">
+          <i class="fa-solid fa-location-dot"></i>
+          <span class="titulo-detalle">Dirección</span>
+          <p>La Punta, San Luis, Argentina.</p>
+        </div>
+
+        <div class="col">
+          <i class="fa-solid fa-phone"></i>
+          <span class="titulo-detalle">Teléfono</span>
+          <p>+54 111 2334455</p>
+        </div>
 
 
+      </div>
+    </div>
+  </section>
+
+  <section class="habilidades" id="skills">
+    <div class="contenido-seccion">
+      <h2 class="titulo">Skills</h2>
+      <h3>TENGO CONOCIMIENTOS DE</h3>
+
+<div class="conjunto">
+
+      <div class="fila">
+        <div class="col">
+          <div class="percent" style="--clr:#fde82c;--num:85;">
+            <div class="dot"></div>
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle cx="70" cy="70" r="70"></circle>
+            </svg>
+            <div class="number">
+              <h2>75<span>%</span></h2>
+              <p>Html</p>
+            </div>
+          </div>
+        </div>
+
+        
+          <div class="col">
+            <div class="percent" style="--clr:#fde82c;--num:85;">
+              <div class="dot"></div>
+              <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70"></circle>
+              </svg>
+              <div class="number">
+                <h2>70<span>%</span></h2>
+                <p>Photoshop</p>
+              </div>
+            </div>
+          </div>
+
+          
+            <div class="col">
+              <div class="percent" style="--clr:#fde82c;--num:85;">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="number">
+                  <h2>70<span>%</span></h2>
+                  <p>Movavi</p>
+                </div>
+              </div>
+            </div>
+
+            
+              <div class="col">
+                <div class="percent" style="--clr:#fde82c;--num:85;">
+                  <div class="dot"></div>
+                  <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70"></circle>
+                  </svg>
+                  <div class="number">
+                    <h2>90<span>%</span></h2>
+                    <p>Office</p>
+                  </div>
+                </div>
+              </div>
+
+              
+                <div class="col">
+                  <div class="percent" style="--clr:#fde82c;--num:85;">
+                    <div class="dot"></div>
+                    <svg>
+                      <circle cx="70" cy="70" r="70"></circle>
+                      <circle cx="70" cy="70" r="70"></circle>
+                    </svg>
+                    <div class="number">
+                      <h2>75<span>%</span></h2>
+                      <p>Javascript</p>
+                    </div>
+                  </div>
+                </div>
+              
+
+                  
+
+                    
+                      <div class="col">
+                        <div class="percent" style="--clr:#fde82c;--num:85;">
+                          <div class="dot"></div>
+                          <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                          </svg>
+                          <div class="number">
+                            <h2>95<span>%</span></h2>
+                            <p>Inglés</p>
+                          </div>
+                        </div>
+                      </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="resumen" id="exp">
+    <div class="contenido-seccion">
+      <h2 class="titulo-seccion">Resumen</h2>
+      <h3>Mi Preparación y Experiencia</h3>
+      <div class="info">
+        <div class="col">
+          <span class="titulo">Educación</span>
+          <table>
+            <tr>
+              <td class="datos">
+                <h3>2021 - 2022</h3>
+              </td>
+              <td rowspan="2" class="descripcion">
+                Primera etapa de argentina programa. Curso Mumuki: 10 meses.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4>Introducción a la programación</h4>
+                <p>Argentina Programa</p>
+              </td>
+            </tr>
+
+          </table>
+
+          <table>
+            <tr>
+              <td class="datos">
+                <h3>2022 - 2023</h3>
+              </td>
+              <td rowspan="2" class="descripcion">
+                Segunda etapa de argentina programa. Duración: 10 meses.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4>Full Stacker Junior</h4>
+                <p>Argentina Programa</p>
+              </td>
+            </tr>
+
+          </table>
+
+          <table>
+            <tr>
+              <td class="datos">
+                <h3>2022 - 2023</h3>
+              </td>
+              <td rowspan="2" class="descripcion">
+                Curso de inglés. Duración: 3 meses.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4>Curso de inglés</h4>
+                <p>Argentina Programa: Centro de Idiomas Universitario</p>
+              </td>
+            </tr>
+
+          </table>
+
+          <table>
+            <tr>
+              <td class="datos">
+                <h3>2023</h3>
+              </td>
+              <td rowspan="2" class="descripcion">
+                Desarrollo Html. Duración: 3 meses.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4>Desarrollo Html</h4>
+                <p>Argentina Programa</p>
+              </td>
+            </tr>
+
+          </table>
+
+        </div>
+
+  </section>
+
+  <script src="app.js"></script>
 </body>
-
 
 </html>
